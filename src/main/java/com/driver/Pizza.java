@@ -69,16 +69,16 @@ public class Pizza {
            }
        }
        if(countExtraCheese>0){
-           bill+="Extra Cheese Added = "+(countExtraCheese*80)+"\n";
+           bill+="Extra Cheese Added = "+(80)+"\n";
        }
        if(countExtraVegToppings>0){
-           bill+="Extra Toppings Added: "+(countExtraVegToppings*70)+"\n";
+           bill+="Extra Toppings Added: "+(70)+"\n";
        }
        if(countExtraNonVegToppings>0){
-           bill+="Extra Toppings Added: "+(countExtraNonVegToppings*120)+"\n";
+           bill+="Extra Toppings Added: "+(120)+"\n";
        }
        if(takeAway>0){
-           bill+="Paperbag Added: "+(takeAway*20)+"\n";
+           bill+="Paperbag Added: "+(20)+"\n";
        }
        bill+="Total Price: "+this.price;
 
