@@ -28,7 +28,7 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
-        if(countExtraCheese==0 && !isDeluxe) {
+        if(countExtraCheese==0 && isDeluxe==false) {
             this.price+=80;
         }
         countExtraCheese++;
@@ -36,13 +36,13 @@ public class Pizza {
 
     public void addExtraToppings(){
         // your code goes here
-        if(this.isVeg && !isDeluxe){
+        if(this.isVeg && isDeluxe==false){
             if(countExtraVegToppings==0) {
                 this.price+=70;
             }
             countExtraVegToppings++;
 
-        }else if(this.isVeg==false && !isDeluxe){
+        }else if(this.isVeg==false && isDeluxe==false){
             if(countExtraNonVegToppings==0) {
                 this.price+=120;
             }
@@ -98,7 +98,7 @@ public class Pizza {
        }
 
 
-       bill+="Total Price: "+this.price;
+       bill+="Total Price: "+this.price+"\n";
 
         return this.bill;
     }
