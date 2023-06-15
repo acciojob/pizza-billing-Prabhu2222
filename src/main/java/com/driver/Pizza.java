@@ -28,27 +28,34 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
+        if(countExtraCheese==0) {
+            this.price+=80;
+        }
         countExtraCheese++;
-        this.price+=80;
     }
 
     public void addExtraToppings(){
         // your code goes here
         if(this.isVeg){
+            if(countExtraVegToppings==0) {
+                this.price+=70;
+            }
             countExtraVegToppings++;
-            this.price+=70;
 
         }else{
+            if(countExtraNonVegToppings==0) {
+                this.price+=120;
+            }
             countExtraNonVegToppings++;
-            this.price+=120;
 
         }
     }
 
     public void addTakeaway(){
         // your code goes here
+        if(takeAway==0)
+          this.price+=20;
         takeAway++;
-        this.price+=20;
 
 
     }
